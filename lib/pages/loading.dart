@@ -13,7 +13,25 @@ class Loading extends StatefulWidget {
 
 class _LoadingState extends State<Loading> {
 
-  void getTime() async {
+
+
+    // void getTime() async {
+    //   try {
+    //     http.Response response = await http.get(Uri.parse('https://www.worldtimeapi.org/api/timezone/Asia/Kolkata'));
+    //
+    //     if (response.statusCode == 200) {
+    //       Map data = jsonDecode(response.body);
+    //       print(data);
+    //     } else {
+    //       print('Failed to load data: ${response.statusCode}');
+    //     }
+    //   } catch (e) {
+    //     print('Error: $e');
+    //   }
+    // }
+
+
+    void getTime() async {
     http.Response response = await http.get(Uri.parse('https://www.worldtimeapi.org/api/timezone/Asia/Kolkata'));
     Map data = jsonDecode(response.body);
     print(data);
