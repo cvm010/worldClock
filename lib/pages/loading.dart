@@ -11,6 +11,8 @@ class Loading extends StatefulWidget {
   State<Loading> createState() => _LoadingState();
 }
 
+
+
 class _LoadingState extends State<Loading> {
 
 
@@ -47,7 +49,10 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('Loading screen'),
+      body: Padding(
+        padding: EdgeInsets.all(50),
+      child: Text('This is loading'),
+      )
     );
   }
 }
